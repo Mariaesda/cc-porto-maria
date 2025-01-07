@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100">
@@ -20,9 +21,11 @@ export default function Navbar() {
             className="btn btn-ghost btn-circle avatar"
           >
             <div className="w-10 rounded-full">
-              <img
+              <Image
                 alt="image"
-                src="/WhatsApp Image 2024-12-18 at 10.38.59_2c83bdb8.jpg"
+                src={"/WhatsApp Image 2024-12-18 at 10.38.59_2c83bdb8.jpg"}
+                width={50}
+                height={50}
               />
             </div>
           </div>
